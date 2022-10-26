@@ -1,0 +1,114 @@
+*, html, body{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'DotriceR';
+    src: url("Dotrice-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'hello';
+    src: url("CommercialScriptDOT-Regular.woff") format("woff");
+}
+
+nav{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+h1{
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    font-family: 'DotriceR', 'Arial-Narrow', Arial, Helvetica, sans-serif;
+}
+
+.title{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p, img{
+    display: inline;
+    color: yellow;
+
+}
+
+marquee{
+    font-size: 90px;
+    background-color: black;
+    font-family: 'DotriceR', 'Arial-Narrow', Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: lighter;
+    margin-top: 10px;
+    border: 10px black;
+    border-style: double;
+    /* border: 10px white;
+    border-style: ridge; */
+    /* box-shadow: 5px 5px 15px yellow; */
+}
+
+.has--passed{
+    background-color: black;
+    color: white;
+    border: 10px white;
+    /* border-style: double; */
+    font-size: 30px;
+    box-shadow: none;
+}
+
+.recent{
+    color: red;
+}
+
+.date{
+    height: auto;
+    width: auto;
+    color: red;
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+.past{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+img{
+    width: 300px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.after{
+    margin-left: 40px;
+}
+
+.whatever{
+    width: 150px;
+}
+
+h1, h2{
+    color: white;
+    font-size: 100px;
+    font-weight: light;
+    margin: 50px 0px 15px 15px;
+    font-family: 'hello';
+    text-shadow:1px 1px 20px #fff, 1px 1px 20px #ccc;
+}
+
+h2{
+    font-size: 50px;
+    margin-bottom: 5px;
+    /* text-shadow: 1px 1px 20px rgb(255, 0, 0), 1px 1px 20px rgb(255, 0, 0); */
+    text-shadow: none;
+}
+
+::selection{
+    mix-blend-mode: difference;
+    color: white;
+}
