@@ -1,6 +1,4 @@
-*, html, body{
-    box-sizing: border-box;
-}
+/* custom fonts */
 
 @font-face {
     font-family: 'DotriceR';
@@ -12,30 +10,120 @@
     src: url("CommercialScriptDOT-Regular.woff") format("woff");
 }
 
-nav{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+@font-face {
+    font-family: 'authentic';
+    src: url("AUTHENTIC-Sans.woff") format("woff");
 }
 
-h1{
-    margin: 0;
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*  custom CSS */
+
+*, html, body{
+    box-sizing: border-box;
 }
 
 body{
     background-color: black;
     font-family: 'DotriceR', 'Arial-Narrow', Arial, Helvetica, sans-serif;
+    color: white;
 }
 
-.title{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+main {
+    margin: 30px 10px;
 }
 
-p, img{
+h1{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    /* text-shadow:1px 1px 20px #fff, 1px 1px 20px #ccc; */
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+h2 span{
+    border-radius: 50%;
+    border: 3px dotted white;
+    padding: 4px 9px;
+    text-align: center;
+}
+
+h3{
+    text-transform: uppercase;
+    font-family: 20px;
+}
+
+img{
+    width: 300px;
+    height: auto;
+    margin-right: 15px;
     display: inline;
-    color: yellow;
+}
 
+.upcoming p {
+    color: yellow;
+    text-transform: uppercase;
+    display: inline;
+}
+
+.past p {
+    display: inline;
 }
 
 marquee{
@@ -52,63 +140,60 @@ marquee{
     /* box-shadow: 5px 5px 15px yellow; */
 }
 
+section.upcoming,
+section.past{
+    margin: 100px 0;
+}
+
 .has--passed{
-    background-color: black;
     color: white;
-    border: 10px white;
-    /* border-style: double; */
-    font-size: 30px;
-    box-shadow: none;
+display: flex;
+flex-direction: column;    
 }
 
-.recent{
+.has--passed img {
+    width: 150px;
+}
+
+.next p{
     color: red;
 }
 
-.date{
-    height: auto;
-    width: auto;
+.screening-date{
     color: red;
-    font-size: 50px;
     margin-top: 40px;
 }
 
 .past{
-    font-size: 30px;
-    margin-bottom: 10px;
-}
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    gap: 20px;
 
-img{
-    width: 300px;
-    height: auto;
-    margin-right: 15px;
 }
 
 .after{
     margin-left: 40px;
 }
 
-.whatever{
-    width: 150px;
-}
-
-h1, h2{
-    color: white;
-    font-size: 100px;
-    font-weight: light;
-    margin: 50px 0px 15px 15px;
-    font-family: 'hello';
-    text-shadow:1px 1px 20px #fff, 1px 1px 20px #ccc;
-}
-
-h2{
-    font-size: 50px;
-    margin-bottom: 5px;
-    /* text-shadow: 1px 1px 20px rgb(255, 0, 0), 1px 1px 20px rgb(255, 0, 0); */
-    text-shadow: none;
-}
-
 ::selection{
     mix-blend-mode: difference;
     color: white;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: black;
+    width: 100%;
+}
+
+.screening-info{
+    display: inline-block;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    justify-content: center;
+    align-items: center;
 }
